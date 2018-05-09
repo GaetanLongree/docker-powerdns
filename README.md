@@ -1,2 +1,2 @@
 # docker-powerdns
-PowerDNS deployment without any backend solution pre-installed.
+PowerDNS deployment with PostgreSQL backend solution pre-installed.
