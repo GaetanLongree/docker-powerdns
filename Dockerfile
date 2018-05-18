@@ -8,4 +8,4 @@ EXPOSE 53/tcp 53/udp
 
 ADD entrypoint.sh /
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["bash", "/entrypoint.sh"]
