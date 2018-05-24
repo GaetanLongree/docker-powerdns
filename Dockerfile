@@ -12,6 +12,8 @@ RUN apt-get update && apt-get install pdns-server -y && echo no | apt-get instal
 
 EXPOSE 53/tcp 53/udp
 
+VOLUME /etc/powerdns
+
 ADD entrypoint.sh /
 
 ENTRYPOINT ["bash", "/entrypoint.sh"]
