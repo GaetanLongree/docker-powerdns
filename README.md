@@ -33,13 +33,13 @@ IP address of the DNS server to forward unknown DNS requests.
 ## Sample `docker run`
 ```
 docker run --detach \
---port 53:53/udp  \
+-p 53:53/udp \
 --env PGSQL_HOST=172.17.0.10 \
 --env PGSQL_USER=pdns \
 --env PGSQL_DBNAME=pdns \
 --env PGSQL_PASSWD=V3ryS3cr3tP4$$w0rd \
 --env DNS_FORWARDER=8.8.8.8 \
 --volume /share/powerdns:/etc/powerdns \
---name powerdns 
+--name powerdns \
 cajetan19/powerdns-pgsql
 ```
